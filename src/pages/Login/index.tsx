@@ -30,6 +30,7 @@ export default function Login() {
           <Input
             label="Nome"
             type="text"
+            placeholder="Digite seu nome"
             {...register("username")}
             errorMessage={errors.username?.message}
           />
@@ -38,6 +39,7 @@ export default function Login() {
           <Input
             label="Senha"
             type="password"
+            placeholder="Digite sua senha"
             {...register("password")}
             errorMessage={errors.password?.message}
           />
