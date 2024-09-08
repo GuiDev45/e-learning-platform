@@ -15,18 +15,17 @@ export const Input = forwardRef(
     const id = useId();
 
     return (
-      <div>
-        <div>
+      <div className={className}>
+        <div className="">
+          <label htmlFor={id}>{label}</label>
           <input
             ref={ref}
             type={type}
-            className={className}
             role="textbox"
             id={id}
             placeholder={label}
             {...rest}
           />
-          <label htmlFor={id}>{label}</label>
           {!!errorMessage && <span>{errorMessage}</span>}
         </div>
       </div>
