@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Link } from "react-router-dom";
 import { LoginFormValues, loginSchema } from "../../models/schemas";
 import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 
 export default function Login() {
   const {
@@ -51,7 +52,7 @@ export default function Login() {
           </label>
           <Link to="/lostPassword">Esqueci minha senha</Link>
         </div>
-        <button type="submit">Entrar</button>
+        <Button type="submit" label="Entrar" variant="btn-primary" />
       </form>
       <div>
         <p>
